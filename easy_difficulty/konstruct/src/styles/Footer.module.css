@@ -1,0 +1,192 @@
+/* src/styles/Footer.module.css */
+
+.footer {
+  color: #ffffff;
+  font-family: "OpenSans", sans-serif;
+}
+
+/* --- Секция с рассылкой (верхняя) --- */
+.newsletterSection {
+  background-color: #171819;
+  padding: 30px 0;
+}
+
+.newsletterContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.newsletterContainer h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.signupForm {
+  display: flex;
+}
+
+.signupForm input {
+  padding: 10px 15px;
+  border: none;
+  font-size: 14px;
+  width: 160px;
+}
+
+.signupForm button {
+  font-family: "OpenSans", sans-serif;
+  background-color: #00a4e5;
+  color: #fff;
+  border: none;
+  padding: 10px 50px;
+  font-weight: 600;
+  font-size: 12.5px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: transform 0.15s ease-out;
+}
+
+/* Новый класс для короткого клика */
+.footerClicked {
+  transform: scale(0.95); /* Уменьшаем чуть-чуть */
+}
+
+/* Новый класс для удержания */
+.footerHeld {
+  transform: scale(0.85); /* Уменьшаем сильнее */
+}
+
+/* --- Основной контент футера --- */
+.mainFooter {
+  background-color: #141a20;
+  padding: 60px 0;
+}
+
+.footerContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 58px;
+}
+
+.footerColumn {
+  flex: 1;
+}
+
+.footerColumn h4,
+.linkColumn h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 25px 0;
+}
+
+.footerLogo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footerColumn p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+  max-width: 240px;
+}
+
+.footerColumn .contactInfo {
+  margin-top: 20px;
+}
+
+/* --- Колонки со ссылками --- */
+.linksColumns {
+  display: flex;
+  gap: 40px; /* Расстояние между колонками FAQ, BLOG и т.д. */
+}
+
+.linkColumn a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  margin-bottom: 12px;
+  transition: color 0.25s ease;
+}
+
+.linkColumn a:hover {
+  color: #00a4e5;
+}
+
+/* --- Иконки соцсетей --- */
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.socialIcons img {
+  width: 19px; /* Задай нужную ширину */
+  height: 19px; /* и высоту */
+  /* Можно убрать, если хочешь сохранить пропорции */
+  object-fit: contain; /* Сохраняет пропорции изображения */
+}
+
+/* --- Секция с копирайтом (нижняя) --- */
+.copyrightSection {
+  background-color: #171819;
+  padding: 23px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copyrightContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.copyrightContainer p {
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Добавь этот класс в конец файла */
+.contactWrapper {
+  display: flex;
+  /* flex: 1; Позволяет этому блоку занимать доступное место */
+  gap: 120px;
+}
+
+/* Добавьте в конец src/styles/Footer.module.css */
+
+/* Стили для сообщений под формой */
+.feedbackMessage {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+/* Стили для ссылки на регистрацию */
+.registerLink {
+  color: #00a4e5;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.registerLink:hover {
+  color: #ffffff;
+}

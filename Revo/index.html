@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div
+        class="header-container d-flex justify-content-between align-items-center"
+      >
+        <div class="header-logo">
+          <img src="assets/img/revo_logo.jpg" alt="Revo_Logo" class="logo" />
+        </div>
+        <div class="header-icons d-flex align-items-center">
+          <a href="#" class="icon-link"
+            ><img
+              src="assets/icons/shopping-cart-3.svg"
+              alt="Cart"
+              class="icon"
+              style="width: 24px; height: 24px; margin-right: 145px"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="word word-your">YOUR</span>
+            <span class="word word-personalized highlight">PERSONALIZED</span>
+            <span class="word word-coffee">COFFEE</span>
+          </h1>
+        </div>
+        <div class="hero-image">
+          <img
+            src="assets/img/revo_h_image.png"
+            alt="Coffee background"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <nav class="main-navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">COFFEE</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">PHIN MA MÀU</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">COMBO PHIN PHÉ</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">GIFTSET</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">LIÊN HỆ</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <section class="your-coffee">
+      <div class="your-coffee-container">
+        <div class="your-coffee-text-content">
+          <p class="your-coffee-subtitle">Your Personalized Coffee</p>
+          <h2 class="your-coffee-title">COFFEE BUILD YOUR BASE</h2>
+        </div>
+        <div class="your-coffee-icons-content">
+          <div class="coffee-icon-item">
+            <div class="coffee-icon-image-wrapper">
+              <img src="assets/icons/caff.svg" alt="caff" />
+            </div>
+            <h3 class="coffee-icons-title">Nguồn gốc</h3>
+            <p class="coffee-icons-description">
+              Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn
+              quốc tế.
+            </p>
+          </div>
+          <div class="coffee-icon-item">
+            <div class="coffee-icon-image-wrapper">
+              <img src="assets/icons/signboard.svg" alt="signboard" />
+            </div>
+            <h3 class="coffee-icons-title">Chất lượng</h3>
+            <p class="coffee-icons-description">
+              Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ
+              nhân cà phê.
+            </p>
+          </div>
+          <div class="coffee-icon-item">
+            <div class="coffee-icon-image-wrapper">
+              <img src="assets/icons/coffee.svg" alt="coffee" />
+            </div>
+            <h3 class="coffee-icons-title">Các loại hạt</h3>
+            <p class="coffee-icons-description">
+              70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green
+              bean.
+            </p>
+          </div>
+          <div class="coffee-icon-item">
+            <div class="coffee-icon-image-wrapper">
+              <img src="assets/icons/percolator.svg" alt="percolator" />
+            </div>
+            <h3 class="coffee-icons-title">Pha chế</h3>
+            <p class="coffee-icons-description">
+              Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và
+              nghiêm ngặt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="your-favorite">
+      <div class="your-favorite-container">
+        <div class="your-favorite-text-content">
+          <p class="your-favorite-subtitle">Choose Your Favorite</p>
+          <h2 class="your-favorite-title">CHUẨN GU ĐÚNG VỊ</h2>
+        </div>
+
+        <div class="your-favorite-carousel-wrapper" id="coffeeCarouselWrapper">
+          <div class="your-favorite-grid-container" id="coffeeCarousel">
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-morning.png" alt="REVO Morning" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">99.000</span>
+                  <h3 class="favorite-icons-title">REVO Morning</h3>
+                  <p class="favorite-icons-description">
+                    đắng, hậu ngọt, hương hoa
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-origin.png" alt="REVO Origin" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">139.000</span>
+                  <h3 class="favorite-icons-title">REVO Origin</h3>
+                  <p class="favorite-icons-description">
+                    hậu ngọt, ít đắng, vị chua dâu
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-everyday.png" alt="REVO Everyday" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">85.000</span>
+                  <h3 class="favorite-icons-title">REVO Everyday</h3>
+                  <p class="favorite-icons-description">
+                    cân bằng, hậu đắng, vị chocolate
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-dam-da.png" alt="REVO Dam Da" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">75.000</span>
+                  <h3 class="favorite-icons-title">REVO Đậm Đà</h3>
+                  <p class="favorite-icons-description">
+                    đậm đà, đắng, truyền thống
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-honey.png" alt="REVO Honey" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">195.000</span>
+                  <h3 class="favorite-icons-title">REVO Honey</h3>
+                  <p class="favorite-icons-description">
+                    độ ngọt cao, hậu ngọt, chua họ táo
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-natural.png" alt="REVO Natural" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">169.000</span>
+                  <h3 class="favorite-icons-title">REVO Natural</h3>
+                  <p class="favorite-icons-description">
+                    hậu ngọt, hương hoa, vị chua dâu
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-morning.png" alt="REVO Morning" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">99.000</span>
+                  <h3 class="favorite-icons-title">REVO Morning</h3>
+                  <p class="favorite-icons-description">
+                    đắng, hậu ngọt, hương hoa
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-icon-item">
+              <div class="product-image-wrapper">
+                <img src="assets/img/revo-origin.png" alt="REVO Origin" />
+              </div>
+              <div class="product-info">
+                <div class="product-details-main">
+                  <span class="product-price">139.000</span>
+                  <h3 class="favorite-icons-title">REVO Origin</h3>
+                  <p class="favorite-icons-description">
+                    hậu ngọt, ít đắng, vị chua dâu
+                  </p>
+                </div>
+                <div class="product-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-arrow" id="carouselNext">
+            <img src="assets/icons/right-arrow.svg" alt="Next" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-gift-section">
+      <div class="best-gift-container">
+        <div class="best-gift-text-content">
+          <p class="best-gift-subtitle">Best Gift For Best Friend</p>
+          <h2 class="best-gift-title">GIFTSET</h2>
+        </div>
+
+        <div class="giftset-interactive-block">
+          <div class="giftset-card-with-pagination">
+            <div class="giftset-image">
+              <img src="assets/img/revo-giftset.png" alt="Revo GIFTSET" />
+            </div>
+
+            <div class="giftset-cards-wrapper">
+              <div class="giftset-card active" data-index="1">
+                <div class="giftset-card-content">
+                  <span class="giftset-price">285.000</span>
+                  <h3 class="giftset-card-title">
+                    Giftset "Cà phê phin Việt Nam"
+                  </h3>
+                  <p class="giftset-description">
+                    Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê
+                    được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí
+                    quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình
+                    yêu, sự đam mê của người làm cà phê… tạo ra những tách cà
+                    phê tinh khiết chỉ dành riêng cho bạn.
+                  </p>
+                  <div class="giftset-specs">
+                    <div class="giftset-spec-item">
+                      <img src="assets/icons/coffee-beans.svg" alt="Loại hạt" />
+                      <div>
+                        <span>Loại hạt</span>
+                        <strong>Fine Robusta Blend</strong>
+                      </div>
+                    </div>
+                    <div class="giftset-spec-item">
+                      <img src="assets/icons/mountain.svg" alt="Độ cao" />
+                      <div>
+                        <span>Độ cao</span>
+                        <strong>700 - 800m</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="giftset-actions">
+                    <button class="buy-button">MUA NGAY</button>
+                    <a href="#" class="details-link">CHI TIẾT</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="giftset-card" data-index="2">
+                <div class="giftset-card-content">
+                  <span class="giftset-price">315.000</span>
+                  <h3 class="giftset-card-title">
+                    Подарочный набор "Ароматный Эспрессо"
+                  </h3>
+                  <p class="giftset-description">
+                    Этот набор создан для истинных ценителей эспрессо. Отборные
+                    зерна средней обжарки раскрывают богатый вкус и насыщенный
+                    аромат, который пробуждает и дарит энергию на весь день.
+                    Идеально для начала продуктивного утра.
+                  </p>
+                  <div class="giftset-specs">
+                    <div class="giftset-spec-item">
+                      <img src="assets/icons/coffee-beans.svg" alt="Loại hạt" />
+                      <div>
+                        <span>Loại hạt</span>
+                        <strong>Arabica Premium</strong>
+                      </div>
+                    </div>
+                    <div class="giftset-spec-item">
+                      <img src="assets/icons/mountain.svg" alt="Độ cao" />
+                      <div>
+                        <span>Độ cao</span>
+                        <strong>900 - 1200m</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="giftset-actions">
+                    <button class="buy-button">MUA NGAY</button>
+                    <a href="#" class="details-link">CHI TIẾT</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="giftset-card" data-index="3">
+                <div class="giftset-card-content">
+                  <span class="giftset-price">299.000</span>
+                  <h3 class="giftset-card-title">
+                    Эксклюзивный "Вечерний Десерт"
+                  </h3>
+                  <p class="giftset-description">
+                    Насладитесь мягким и обволакивающим вкусом этого уникального
+                    кофейного бленда. Ноты шоколада и карамели создают идеальное
+                    завершение дня. Подарите себе или близким моменты истинного
+                    кофейного удовольствия.
+                  </p>
+                  <div class="giftset-specs">
+                    <div class="giftset-spec-item">
+                      <img src="assets/icons/coffee-beans.svg" alt="Loại hạt" />
+                      <div>
+                        <span>Loại hạt</span>
+                        <strong>Blend (Arabica/Robusta)</strong>
+                      </div>
+                    </div>
+                    <div class="giftset-spec-item">
+                      <img src="assets/icons/mountain.svg" alt="Độ cao" />
+                      <div>
+                        <span>Độ cao</span>
+                        <strong>600 - 900m</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="giftset-actions">
+                    <button class="buy-button">MUA NGAY</button>
+                    <a href="#" class="details-link">CHI TIẾT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="best-gift-pagination">
+              <ul>
+                <li class="active" data-index="1">1</li>
+                <li data-index="2">2</li>
+                <li data-index="3">3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="combo-section">
+      <div class="combo-container">
+        <div class="combo-text-content">
+          <p class="combo-subtitle">Your Personalized Coffee</p>
+          <h2 class="combo-title">COMBO PHIN PHÊ</h2>
+        </div>
+
+        <div class="combo-carousel-wrapper">
+          <div class="combo-carousel" id="comboCarousel">
+            <div class="combo-card">
+              <div class="combo-card-image">
+                <img
+                  src="assets/img/combo-revo-dam-da.png"
+                  alt="Combo Revo Đậm Đà"
+                />
+              </div>
+              <div class="combo-card-content">
+                <div class="combo-card-price">
+                  <span>147.000</span>
+                  <del>155.000</del>
+                </div>
+                <h3 class="combo-card-title">Combo Revo Đậm Đà</h3>
+                <p class="combo-card-description">
+                  Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh
+                  táo làm việc...
+                </p>
+                <div class="combo-card-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <div class="combo-card-image">
+                <img
+                  src="assets/img/combo-revo-everyday.png"
+                  alt="Combo Revo Everyday"
+                />
+              </div>
+              <div class="combo-card-content">
+                <div class="combo-card-price">
+                  <span>156.000</span>
+                  <del>165.000</del>
+                </div>
+                <h3 class="combo-card-title">Combo Revo Everyday</h3>
+                <p class="combo-card-description">
+                  Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và
+                  hương thơm...
+                </p>
+                <div class="combo-card-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <div class="combo-card-image">
+                <img
+                  src="assets/img/combo-revo-honey.png"
+                  alt="Combo Revo Honey"
+                />
+              </div>
+              <div class="combo-card-content">
+                <div class="combo-card-price">
+                  <span>275.000</span>
+                  <del>289.000</del>
+                </div>
+                <h3 class="combo-card-title">Combo Revo Honey</h3>
+                <p class="combo-card-description">
+                  Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến
+                  hạt Arabica...
+                </p>
+                <div class="combo-card-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <div class="combo-card-image">
+                <img
+                  src="assets/img/combo-revo-natural.png"
+                  alt="Combo Revo Origin"
+                />
+              </div>
+              <div class="combo-card-content">
+                <div class="combo-card-price">
+                  <span>249.000</span>
+                  <del>260.000</del>
+                </div>
+                <h3 class="combo-card-title">Combo Revo Origin</h3>
+                <p class="combo-card-description">
+                  Revo Origin là sự kết hợp của hạt Arabica và Robusta chất
+                  lượng cao...
+                </p>
+                <div class="combo-card-actions">
+                  <button class="buy-button">MUA NGAY</button>
+                  <a href="#" class="details-link">CHI TIẾT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-arrow" id="comboCarouselNext">
+          <img src="assets/icons/right-arrow.svg" alt="Next" />
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-text-content">
+        <p class="footer-text">© Revo Coffee Việt Nam - 2018</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

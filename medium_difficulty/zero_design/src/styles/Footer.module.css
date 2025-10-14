@@ -1,0 +1,141 @@
+.footer {
+  background-color: #ffffff;
+  padding: 120px 10px 30px; /* Отступы: сверху, по бокам, снизу */
+  /* Та самая линия сверху, о которой ты говорил */
+  border-top: 1px solid #f1f1f1;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column; /* Располагаем верхнюю и нижнюю часть друг под другом */
+}
+
+/* --- Верхняя часть футера (форма + ссылки) --- */
+.footerTop {
+  display: flex;
+  justify-content: space-between; /* Главный трюк: разносим левую и правую часть */
+  gap: 40px; /* Расстояние между левой и правой частью */
+  margin-bottom: 80px; /* Большой отступ до нижней части с копирайтами */
+}
+
+/* --- Левая часть (форма и иконки) --- */
+.footerLeft {
+  flex: 1.5; /* Позволяет блоку занимать доступное пространство */
+  max-width: 300px; /* Ограничим ширину для красоты */
+}
+
+.footerLeft h4 {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Контейнер для "склеивания" инпута и кнопки */
+.newsletterForm {
+  display: flex;
+  margin-bottom: 150px; /* Отступ до иконок */
+}
+
+.newsletterForm input {
+  border: 1px solid #e2e1df;
+  border-right: none; /* Убираем правую границу, чтобы кнопка "приклеилась" */
+  padding: 12px;
+  font-size: 16px;
+  width: 100%; /* Занимает всю доступную ширину */
+  font-family: "Jost", sans-serif;
+}
+
+.newsletterForm button {
+  padding: 0 25px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px; /* Расстояние между иконками */
+}
+
+/* Делаем черный круглый фон для иконок */
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 50%; /* Это делает фон круглым */
+}
+
+.socialIcon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* --- Правая часть (колонки с ссылками) --- */
+.footerRight {
+  flex: 2; /* Даем правой части больше места */
+  display: flex;
+  justify-content: flex-end; /* Разносим наши 3 колонки */
+  gap: 70px;
+}
+
+/* Стили для одной колонки */
+.column {
+  display: flex;
+  flex-direction: column; /* Ссылки идут друг под другом */
+  align-items: flex-start; /* Прижимаем все к левому краю */
+}
+
+.column h4 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000;
+}
+
+/* Дополнительный отступ для заголовка "Company", чтобы отделить его */
+.column .columnTitleWithMargin {
+  /* 👇 Можешь вернуть желаемое значение, например, 40px */
+  margin-top: 20px;
+}
+
+.column a {
+  text-decoration: none;
+  color: #333333;
+  margin-bottom: 12px; /* Расстояние между ссылками */
+  font-size: 16px;
+  line-height: 20px;
+  transition: color 0.4s;
+}
+
+.column a:hover {
+  color: #dbac13;
+}
+
+/* --- Нижняя часть футера --- */
+.footerBottom {
+  display: flex;
+  justify-content: space-between; /* Разносим надписи по краям */
+  color: #333333;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.yellowText {
+  color: #e2b013; /* Тот самый желтый цвет */
+  font-weight: 400;
+  text-transform: uppercase;
+}

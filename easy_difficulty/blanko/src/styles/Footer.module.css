@@ -1,0 +1,164 @@
+/* src/styles/Footer.module.css */
+
+.footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.footerContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- Верхняя часть --- */
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.blankoLogo {
+  width: 110px;
+  height: 25px;
+}
+
+.webflowBtn {
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 650;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+/* Стили для анимации кнопки */
+.buttonClicked {
+  transform: scale(0.95);
+}
+.buttonHeld {
+  transform: scale(0.8);
+}
+
+/* --- Разделитель --- */
+.divider {
+  height: 1px;
+  background-color: #ffffff29;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/* --- Средняя часть --- */
+.footerMiddle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.middleLinks a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  transition: color 0.3s;
+}
+
+.middleLinks a:hover {
+  color: #645b5b;
+}
+
+.middleLinks a:last-child {
+  margin-right: 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 11px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff1a; /* Серый фон как на скриншоте */
+}
+
+.socialIcon img {
+  width: 15px;
+  height: 15px;
+  transition: filter 0.3s ease;
+}
+
+.socialIcon img:hover {
+  filter: brightness(0.3); /* Уменьшаем яркость при наведении */
+}
+
+/* --- Нижняя часть --- */
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  color: #ffffffb2; /* Слегка приглушенный белый */
+  font-size: 15px;
+}
+
+.poweredBy {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.poweredBy img {
+  height: 23px;
+}
+
+.designerLink {
+  color: #ff7143;
+  text-decoration: none;
+}
+
+.contactLink a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contactLink a:hover {
+  color: #645b5b;
+}
+
+/* // 🔥 ВАЖНО: Добавь стили для .linkButton в Footer.module.css,
+// чтобы кнопки выглядели как текстовые ссылки. */
+
+.linkButton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 25px;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.linkButton:hover {
+  color: #645b5b;
+}
+
+.linkButton:last-child {
+  margin-right: 0;
+}

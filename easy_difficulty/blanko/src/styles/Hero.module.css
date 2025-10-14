@@ -1,0 +1,110 @@
+.hero {
+  background-color: #ff7143;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 730px;
+  overflow: hidden;
+}
+
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 55px;
+  height: 100%;
+}
+
+.heroLeft {
+  text-align: center;
+  margin-left: -40px;
+}
+
+.heroLeft h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+.heroLeft p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 560px;
+}
+
+.heroPurBtn {
+  background: #000000;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 20px 70px;
+  border-radius: 6px;
+  text-decoration: none;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  margin-right: 7px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тень, создающая объём */
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.otherBtn {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 20px 80px;
+  border-radius: 6px;
+  text-decoration: none;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  margin-left: 7px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тень, создающая объём */
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.heroRight img {
+  width: 415px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .heroPurBtn:active,
+.otherBtn:active {
+  transform: scale(0.85);
+
+  /* 2. Создаём эффект вдавливания с помощью внутренней тени */
+/* box-shadow: inset 0 4px 10px transparent; */
+/* } */
+
+/* Новый класс для короткого клика */
+.clicked {
+  transform: scale(0.95); /* Уменьшаем чуть-чуть */
+}
+
+/* Новый класс для удержания */
+.held {
+  transform: scale(0.8); /* Уменьшаем сильнее */
+}
+
+/* --- НОВЫЕ КЛАССЫ ДЛЯ БЕЛОЙ КНОПКИ --- */
+.otherBtnClicked {
+  transform: scale(0.95); /* Только уменьшение, без тени */
+}
+
+.otherBtnHeld {
+  transform: scale(0.8); /* Только уменьшение, без тени */
+}
