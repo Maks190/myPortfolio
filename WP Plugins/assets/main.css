@@ -1,0 +1,176 @@
+/* Твой существующий сброс стилей и импорт шрифтов Poppins оставляем */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Общие стили для body --- */
+body {
+  font-family: "Poppins", sans-serif; /* Основной шрифт */
+  color: #333; /* Базовый цвет текста */
+  background-color: #ffffff; /* Белый фон страницы, как на скриншоте */
+  line-height: 1.6; /* Улучшает читаемость текста */
+}
+
+/* --- Шапка сайта --- */
+.site-header {
+  display: flex;
+  justify-content: center; /* Логотип по центру */
+  padding: 25px 20px; /* Отступы сверху/снизу и по бокам */
+  border-bottom: 1px solid #f0f0f0; /* Тонкая линия под логотипом */
+  margin-bottom: 40px; /* Отступ снизу от шапки */
+}
+
+.logo-container img {
+  max-height: 40px; /* Отрегулируй высоту логотипа по необходимости */
+  display: block;
+}
+
+/* --- Основной контент --- */
+.site-main {
+  max-width: 960px; /* Максимальная ширина контейнера для контента */
+  margin: 0 auto; /* Центрирование блока .site-main */
+  padding: 0 20px; /* Боковые отступы для контента */
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif; /* Шрифт Poppins для заголовка, если есть */
+  font-size: 28px; /* Размер заголовка, можно подобрать */
+  font-weight: 500; /* Средняя жирность */
+  color: #1c1e23;
+  margin-bottom: 30px; /* Отступ под заголовком */
+  text-align: left; /* Выравнивание по левому краю, как на скриншоте */
+}
+
+/* --- Сетка плагинов --- */
+.plugins-grid {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+  gap: 20px; /* Расстояние между карточками (вертикальное и горизонтальное) */
+}
+
+.plugin-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea; /* Рамка карточки */
+  border-radius: 4px; /* Небольшое скругление углов */
+  /* Расчет ширины для двух колонок с учетом gap: (100% - gap) / 2 */
+  width: calc(50% - 10px);
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Элементы внутри карточки располагаются вертикально */
+  text-align: left; /* Текст внутри карточки по левому краю */
+  margin-bottom: 20px; /* Добавляем отступ снизу на случай, если flex-wrap перенесет карточки */
+}
+
+/* Адаптивность для маленьких экранов: карточки в один столбец */
+@media (max-width: 768px) {
+  .plugin-card {
+    width: 100%; /* Карточка занимает всю ширину */
+  }
+  .main-title {
+    font-size: 24px; /* Можно немного уменьшить заголовок */
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 22px;
+  }
+  .plugin-card {
+    padding: 10px;
+  }
+}
+
+.plugin-image-container {
+  width: 100%;
+  height: auto; /* Автоматическая высота, чтобы избежать искажений */
+  aspect-ratio: 1 / 1; /* Соотношение сторон для контейнера картинки, можно настроить */
+  background-color: #fff; /* Фон для области картинки */
+  border: 1px solid #f0f0f0; /* Рамка вокруг картинки */
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Обрезает части изображения, выходящие за контейнер */
+}
+
+.plugin-image-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Масштабирует изображение, чтобы заполнить контейнер, может обрезать */
+  /* Если нужно, чтобы вся картинка была видна, используй object-fit: contain; */
+}
+
+.plugin-name {
+  font-family: "Poppins", sans-serif; /* Шрифт Poppins, если есть */
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.plugin-price {
+  font-size: 16px;
+  font-weight: 600; /* Жирный шрифт для цены */
+  color: #111; /* Цвет цены, на скриншоте он не синий */
+  margin-bottom: 12px;
+}
+
+.buy-button {
+  background-color: #3b82f6; /* Синий цвет кнопки со скриншота */
+  color: white;
+  border: none;
+  /* padding: 10px 20px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 30%;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px; /* Скругление углов кнопки */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; /* Плавный переход для hover */
+  /* align-self: flex-start; Кнопка выравнивается по левому краю карточки */
+  margin-top: auto; /* Прижимает кнопку к низу карточки, если карточки разной высоты */
+}
+
+.buy-button:hover {
+  background-color: #2563eb; /* Более темный синий при наведении */
+}
+
+/* --- Подвал сайта --- */
+.site-footer-bottom {
+  text-align: center;
+  padding: 40px 20px 20px; /* Отступы */
+  margin-top: 50px; /* Отступ сверху от основного контента */
+  border-top: 1px solid #f0f0f0; /* Линия над подвалом */
+  font-size: 13px;
+  color: #555; /* Цвет текста в подвале */
+}
+
+.site-footer-bottom p {
+  margin-bottom: 8px;
+}
+
+.site-footer-bottom a {
+  color: #3b82f6; /* Синий цвет для ссылок */
+  text-decoration: none;
+}
+
+.site-footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 7px;
+  font-size: 16px; /* Размер для текстовых "иконок" или иконок Font Awesome */
+  color: #444; /* Цвет иконок/ссылок */
+}

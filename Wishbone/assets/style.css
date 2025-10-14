@@ -1,0 +1,1114 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+/* Header Section */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 120px;
+  max-height: 90px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: #1b1a1a;
+}
+
+.logo-container a .icon-Wishbone-logo {
+  width: 220px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Logo */
+
+/* Main Nav */
+
+.header-right ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header-right ul li {
+  margin-right: 32px;
+}
+
+.header-left ul li:last-child {
+  margin-right: 0;
+}
+
+.header-right ul li a {
+  text-decoration: none;
+  color: #1b1a1a;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.header-right ul li a:hover:not(.get-temp-btn) {
+  color: #3f3f3f;
+}
+
+.header-right ul li a.get-temp-btn {
+  max-width: 160px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 14px;
+  padding: 10px 20px;
+  background-color: #1b1a1a;
+  color: #fff;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.header-right ul li a.get-temp-btn:hover {
+  background-color: #3f3f3f;
+}
+
+/* Main Nav */
+
+/* Hero Section */
+
+.hero-section {
+  background-color: #ece7e4;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  /* max-width: 1200px;
+  margin: 0 auto; */
+}
+
+.hero-text-content {
+  flex-basis: 50%;
+  padding: 90px 60px;
+  box-sizing: border-box;
+}
+
+.hero-image-content {
+  flex-basis: 50%;
+  height: 720px;
+  box-sizing: border-box;
+}
+
+.hero-image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #645c55;
+}
+
+.hero-title {
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #1b1a1a;
+  margin-bottom: 22px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #403e3b;
+  margin-bottom: 40px;
+}
+
+.hero-read-more {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #1b1a1a;
+  text-decoration: none;
+  margin-bottom: 120px;
+}
+
+/* Hero Section */
+
+/* Our Firm Section */
+
+.our-firm {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.firm-container {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.firm-title-column {
+  flex-basis: 30%;
+  padding-right: 130px;
+  box-sizing: border-box;
+}
+
+.firm-content-column {
+  flex-basis: 70%;
+  box-sizing: border-box;
+}
+
+.firm-main-title {
+  font-size: 32px;
+  font-weight: 400;
+  color: #403e3b;
+  line-height: 38px;
+  letter-spacing: 0%;
+}
+
+.firm-text-paragraphs p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #403e3b;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 15px;
+}
+
+.firm-text-paragraphs p:last-child {
+  margin-bottom: 25px;
+}
+
+.firm-employee-info {
+  display: flex;
+  align-items: center;
+}
+
+.employee-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.employee-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-name {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1b1a1a;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin: 0 0 5px 0;
+}
+
+.employee-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #645c55;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+/* Our Firm Section */
+
+/* Background-Text Section */
+
+.fullwidth-image-section {
+  position: relative; /* Необходимо для позиционирования дочерних элементов, если потребуется absolute */
+  min-height: 500px; /* Задай высоту секции. Может быть vh, px, или определяться контентом */
+  background-image: url(/assets/img/background-1.jpg); /* Путь к изображению */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 60px 0; /* Вертикальные отступы для секции, если текст не должен прижиматься кверху/книзу */
+  box-sizing: border-box;
+
+  /* Для размещения текстового блока */
+  display: flex; /* Можно использовать flex для выравнивания .content-overlay */
+  /* justify-content: flex-end;  Если текст всегда справа */
+  /* align-items: center; */
+}
+
+.content-overlay {
+  width: 100%; /* Занимает всю ширину родителя */
+  /* Если нужно ограничить ширину контентной части, как в бутстраповском .container: */
+  max-width: 1140px; /* Или твоя стандартная ширина контейнера */
+  margin: 0 auto; /* Центрирование, если max-width задан */
+  padding: 0 15px; /* Боковые отступы для контента внутри */
+  box-sizing: border-box;
+
+  /* Для позиционирования текстового блока внутри этого контейнера */
+  display: flex;
+  justify-content: flex-end; /* Перемещает .text-block-on-image вправо */
+  align-items: center; /* Выравнивает текстовый блок по центру вертикали */
+  height: 100%; /* Чтобы align-items работало относительно высоты секции (если секция имеет фиксированную высоту) */
+}
+
+.text-block-on-image {
+  /* Полупрозрачный белый фон для читаемости текста, подбери цвет и прозрачность */
+  /* Или сплошной цвет, если на макете так: background-color: #f8f5f2; */
+  padding: 40px; /* Внутренние отступы для текстового блока */
+  border-radius: 8px; /* Небольшое скругление углов, если нужно */
+  max-width: 450px; /* Максимальная ширина текстового блока, чтобы он не был слишком растянутым */
+  box-sizing: border-box;
+  padding-top: 160px;
+}
+
+.image-overlay-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #403e3b;
+  margin-bottom: 10px;
+}
+
+.image-overlay-description {
+  max-width: 280px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #645c55;
+  margin-bottom: 0;
+}
+
+/* Background-Text Section */
+
+/* How We Do Section */
+
+.how-we-do {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.how-we-do-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.how-we-do-header {
+  margin-bottom: 50px;
+}
+
+.how-we-do-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #645c55;
+  margin-bottom: 14px;
+}
+
+.how-we-do-main-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #1b1a1a;
+  line-height: 42px;
+  margin-bottom: 0;
+}
+
+.how-we-do-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+}
+
+.step-item {
+  flex-basis: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.step-icon-container {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.step-icon-container span[class^="icon-"] {
+  font-size: 90px;
+  color: #403e3b;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #403e3b;
+  margin-bottom: 12px;
+}
+
+.step-description {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #645c55;
+}
+
+/* How We Do Section */
+
+/* Background-Text Section2 */
+
+.fullwidth-image-section2 {
+  position: relative; /* Необходимо для позиционирования дочерних элементов, если потребуется absolute */
+  min-height: 500px; /* Задай высоту секции. Может быть vh, px, или определяться контентом */
+  background-image: url(/assets/img/background-2.jpg); /* Путь к изображению */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 60px 0; /* Вертикальные отступы для секции, если текст не должен прижиматься кверху/книзу */
+  box-sizing: border-box;
+
+  /* Для размещения текстового блока */
+  display: flex; /* Можно использовать flex для выравнивания .content-overlay */
+  /* justify-content: flex-end;  Если текст всегда справа */
+  /* align-items: center; */
+}
+
+.content-overlay2 {
+  width: 100%; /* Занимает всю ширину родителя */
+  /* Если нужно ограничить ширину контентной части, как в бутстраповском .container: */
+  max-width: 1140px; /* Или твоя стандартная ширина контейнера */
+  margin: 0 auto; /* Центрирование, если max-width задан */
+  padding: 0 15px; /* Боковые отступы для контента внутри */
+  box-sizing: border-box;
+
+  /* Для позиционирования текстового блока внутри этого контейнера */
+  display: flex;
+  justify-content: flex-end; /* Перемещает .text-block-on-image вправо */
+  align-items: center; /* Выравнивает текстовый блок по центру вертикали */
+  height: 100%; /* Чтобы align-items работало относительно высоты секции (если секция имеет фиксированную высоту) */
+}
+
+.text-block-on-image2 {
+  /* Полупрозрачный белый фон для читаемости текста, подбери цвет и прозрачность */
+  /* Или сплошной цвет, если на макете так: background-color: #f8f5f2; */
+  padding: 40px; /* Внутренние отступы для текстового блока */
+  border-radius: 8px; /* Небольшое скругление углов, если нужно */
+  max-width: 450px; /* Максимальная ширина текстового блока, чтобы он не был слишком растянутым */
+  box-sizing: border-box;
+  padding-top: 160px;
+}
+
+.image-overlay-title2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #403e3b;
+  margin-bottom: 10px;
+}
+
+.image-overlay-description2 {
+  max-width: 280px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #645c55;
+  margin-bottom: 0;
+}
+
+/* Background-Text Section2 */
+
+/* Customers Section */
+
+.customers-section {
+  background-color: #403e3b;
+  padding: 120px 0;
+  color: #fff;
+}
+
+.customers-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.customers-text-container {
+  max-width: 460px;
+  padding-left: 24px;
+}
+
+.customers-subtitle {
+  font-size: 14px;
+  font-weight: 40;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ece7e4;
+  margin-bottom: 10px;
+}
+
+.customers-main-title {
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+.customers-description {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ece7e4;
+  margin-bottom: 0;
+}
+
+.customers-img-container {
+  flex-basis: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-img-container img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+  /* filter: brightness(0) invert(1); */
+  fill: #fff;
+}
+
+/* Customers Section */
+
+/* Background-Text Section3 */
+
+.fullwidth-image-section3 {
+  position: relative; /* Необходимо для позиционирования дочерних элементов, если потребуется absolute */
+  min-height: 500px; /* Задай высоту секции. Может быть vh, px, или определяться контентом */
+  background-image: url(/assets/img/background-3.jpg); /* Путь к изображению */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 60px 0; /* Вертикальные отступы для секции, если текст не должен прижиматься кверху/книзу */
+  box-sizing: border-box;
+
+  /* Для размещения текстового блока */
+  display: flex; /* Можно использовать flex для выравнивания .content-overlay */
+  /* justify-content: flex-end;  Если текст всегда справа */
+  /* align-items: center; */
+}
+
+.content-overlay3 {
+  width: 100%; /* Занимает всю ширину родителя */
+  /* Если нужно ограничить ширину контентной части, как в бутстраповском .container: */
+  max-width: 1140px; /* Или твоя стандартная ширина контейнера */
+  margin: 0 auto; /* Центрирование, если max-width задан */
+  padding: 0 15px; /* Боковые отступы для контента внутри */
+  box-sizing: border-box;
+
+  /* Для позиционирования текстового блока внутри этого контейнера */
+  display: flex;
+  justify-content: flex-start; /* Перемещает .text-block-on-image вправо */
+  align-items: center; /* Выравнивает текстовый блок по центру вертикали */
+  height: 100%; /* Чтобы align-items работало относительно высоты секции (если секция имеет фиксированную высоту) */
+}
+
+.text-block-on-image3 {
+  /* Полупрозрачный белый фон для читаемости текста, подбери цвет и прозрачность */
+  /* Или сплошной цвет, если на макете так: background-color: #f8f5f2; */
+  padding: 40px; /* Внутренние отступы для текстового блока */
+  border-radius: 8px; /* Небольшое скругление углов, если нужно */
+  max-width: 450px; /* Максимальная ширина текстового блока, чтобы он не был слишком растянутым */
+  box-sizing: border-box;
+  padding-top: 160px;
+}
+
+.image-overlay-title3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #403e3b;
+  margin-bottom: 10px;
+}
+
+.image-overlay-description3 {
+  max-width: 280px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #645c55;
+  margin-bottom: 0;
+}
+
+/* Background-Text Section3 */
+
+/* Ftr-Projects Section */
+
+.ftr-projects {
+  background-color: #f7f7f7;
+  padding: 120px 0;
+  color: #1b1a1a;
+}
+
+.ftr-projects-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.ftr-projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.ftr-projects-header-text {
+  flex-grow: 1; /* Позволяет текстовому блоку занимать доступное пространство */
+  /* max-width: 70%; Можно ограничить ширину, если нужно */
+}
+
+.ftr-projects-main-title {
+  font-size: 39px;
+  font-weight: 400;
+  color: #1b1a1a;
+  margin-bottom: 15px;
+}
+
+.ftr-projects-description {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #645c55;
+  font-weight: 400;
+  /* margin-bottom: 40px; */
+  max-width: 585px;
+}
+
+.ftr-projects-header-btn {
+  background-color: #1b1a1a;
+  color: #fff;
+  padding: 10px 25px; /* Немного увеличил паддинги */
+  font-size: 15px;
+  font-weight: 500; /* Сделал чуть жирнее */
+  border-radius: 8px; /* Скругление */
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  margin-left: 30px; /* Отступ слева от текстового блока */
+  align-self: center; /* Чтобы кнопка была по центру вертикали относительно текста, если он многострочный */
+}
+
+.ftr-projects-header-btn:hover {
+  background-color: #333;
+}
+
+.ftr-projects-grid {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  flex: 1;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-image {
+  height: 460px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+}
+
+.project-card-overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px 30px; /* Отступы внутри карточки для текста и кнопки */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Размещает текст сверху, кнопку снизу */
+  color: #403e3b; /* Цвет текста по умолчанию белый на темном фоне */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.4) 100%
+  ); /* Легкое затемнение для лучшей читаемости текста */
+}
+
+.project-location {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: #645c55;
+  margin-bottom: 2px;
+}
+
+.project-name {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #403e3b;
+}
+
+.ftr-projects-view-all {
+  text-align: center;
+}
+
+.ftr-projects-view-all a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #1b1a1a;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.ftr-projects-view-all a:hover {
+  color: #555;
+}
+
+/* Ftr-Projects Section */
+
+/* Meet-Us Section */
+
+.meet-us {
+  background-color: #fff;
+  padding: 100px 0;
+  color: #1b1a1a;
+}
+
+.meet-us-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Meet-Us Section */
+.meet-us {
+  background-color: #fff;
+  padding: 80px 0; /* Немного уменьшил отступы для примера */
+  color: #1b1a1a;
+}
+
+.meet-us-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex; /* Располагаем текстовую колонку и колонку с членами команды рядом */
+  gap: 60px; /* Пространство между левой и правой колонками */
+  align-items: flex-start; /* Выравниваем по верху, если высота колонок разная */
+}
+
+.meet-us-text-column {
+  flex-basis: 35%; /* Левая колонка занимает ~35% */
+  /* Можно добавить padding-right, если нужно больше отступа от правой колонки */
+}
+
+.meet-us-main-title {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #403e3b;
+  margin-bottom: 14px;
+}
+
+.meet-us-description {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #645c55;
+  margin-bottom: 30px;
+}
+
+.meet-us-see-team a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #1b1a1a;
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  padding-bottom: 3px; /* Небольшой отступ для линии */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.meet-us-see-team a:hover {
+  color: #555;
+}
+
+.meet-us-members-column {
+  flex-basis: 65%; /* Правая колонка занимает ~65% */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки для членов команды */
+  gap: 20px 40px; /* Отступы: 20px по вертикали, 40px по горизонтали между карточками */
+  align-items: start; /* Выравнивание элементов по началу их grid-ячейки */
+}
+
+.team-member-card {
+  display: flex;
+  align-items: center; /* Аватар и текст выровнены по центру вертикально */
+  margin-bottom: 20px; /* Добавим отступ снизу для каждого члена команды, чтобы создать ряды */
+}
+
+/* Пятый элемент (Niko Ferry) - теперь в левой колонке */
+.team-member-card:nth-child(5) {
+  grid-column: 1 / 2; /* Явно указываем, что он должен быть в первой колонке */
+  justify-self: start; /* Выравниваем по началу (левому краю) ячейки */
+  /* max-width: fit-content; /* Это можно оставить, чтобы блок не растягивался */
+  margin-top: 0px; /* Убираем или корректируем верхний отступ, если предыдущий ряд был полный */
+  /* Если предыдущий ряд (Ferris и Aria) был полным, возможно, понадобится margin-top,
+     чтобы Niko был на новой строке. Если нет, margin-top: 0; или небольшой. */
+}
+
+.member-avatar {
+  width: 80px; /* Размер аватара */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px; /* Отступ справа от аватара */
+}
+
+.member-name {
+  font-size: 17px;
+  font-weight: 600; /* Имя жирным */
+  color: #1b1a1a;
+  margin-bottom: 3px;
+}
+
+.member-role {
+  font-size: 14px;
+  color: #777; /* Должность светлее */
+}
+
+/* Meet-Us Section */
+
+/* Good-Fit Section */
+
+.good-fit {
+  background-color: #cec4bc;
+  padding: 100px 0;
+  color: #1b1a1a;
+}
+
+.good-fit-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 440px;
+}
+
+.good-fit-text-content {
+  flex-grow: 1;
+}
+
+.good-fit-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #645c55;
+  margin-bottom: 5px;
+}
+
+.good-fit-main-title {
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #1b1a1a;
+  max-width: 570px;
+}
+
+.good-fit-button {
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #1b1a1a;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.good-fit-button:hover {
+  color: #555;
+}
+
+/* Good-Fit Section */
+
+/* Footer Section */
+footer {
+  background-color: #f7f7f7; /* Светло-серый фон, как на макете */
+  padding: 60px 0; /* Вертикальные отступы */
+  border-top: 1px solid #e0e0e0; /* Тонкая линия сверху, если есть на макете */
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Выравниваем левую и правую часть по центру вертикально */
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: #1b1a1a;
+}
+
+.footer-logo a .icon-Wishbone-logo {
+  /* Стили для логотипа в футере, если они отличаются от хедера */
+  /* Например, можно сделать его немного меньше или другого цвета, если нужно */
+  /* Убедись, что цвет иконки логотипа здесь темный, так как фон светлый */
+  color: #1b1a1a; /* Переопределяем цвет, если он был белым для хедера */
+  font-size: 24px; /* Пример размера, подбери по макету */
+}
+
+.footer-copyright p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #777; /* Серый цвет для текста копирайта */
+  margin-bottom: 3px;
+}
+
+.footer-copyright p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-copyright a {
+  /* Если "Licensing" это ссылка */
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-icons li {
+  margin-left: 20px; /* Отступ между иконками */
+}
+
+.social-icons li:first-child {
+  margin-left: 0;
+}
+
+.social-icons a {
+  color: #1b1a1a; /* Цвет иконок соцсетей */
+  font-size: 20px; /* Размер иконок соцсетей, подбери */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #555; /* Цвет иконок при наведении */
+}
+
+/* Footer Section */

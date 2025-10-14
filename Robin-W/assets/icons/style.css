@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?c5mxkj');
+  src:  url('fonts/icomoon.eot?c5mxkj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?c5mxkj') format('truetype'),
+    url('fonts/icomoon.woff?c5mxkj') format('woff'),
+    url('fonts/icomoon.svg?c5mxkj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-some-figure:before {
+  content: "\e90c";
+  color: #8491a0;
+}
+.icon-aplfrmom:before {
+  content: "\e90d";
+  color: #8491a0;
+}
+.icon-play-btn:before {
+  content: "\e909";
+}
+.icon-linkedin-logo:before {
+  content: "\e900";
+  color: #0077b5;
+}
+.icon-dribbble-logo:before {
+  content: "\e901";
+  color: #e94b88;
+}
+.icon-twitter-logo:before {
+  content: "\e902";
+  color: #26a7de;
+}
+.icon-leaf-logo:before {
+  content: "\e903";
+  color: #8491a0;
+}
+.icon-f-logo:before {
+  content: "\e904";
+  color: #8491a0;
+}
+.icon-epiq-logo:before {
+  content: "\e905";
+  color: #8491a0;
+}
+.icon-cbre-logo:before {
+  content: "\e906";
+  color: #8491a0;
+}
+.icon-camera:before {
+  content: "\e907";
+  color: #5221e6;
+}
+.icon-fountain-pen:before {
+  content: "\e908";
+  color: #5221e6;
+}
+.icon-tiles:before {
+  content: "\e90a";
+  color: #5221e6;
+}
+.icon-RobinW-logo:before {
+  content: "\e90b";
+  color: #fff;
+}
