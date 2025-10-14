@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +7,9 @@
 body {
   background-color: #f9fbff;
   color: #415167;
-  font-family: "Nunito", sans-serif; /* Основной шрифт для текста */
+  font-family: "Nunito", sans-serif;
 }
 
-/* Стили для хедера */
 .site-header {
   position: absolute;
   width: 100%;
@@ -35,7 +33,6 @@ body {
   margin-left: 20px;
 }
 
-/* Стили для Hero Section */
 .hero-section {
   display: flex;
   max-height: 768px;
@@ -52,7 +49,7 @@ body {
   padding-top: 400px;
   position: relative;
   z-index: 10;
-  overflow: visible; /* Убедитесь, что overflow: visible */
+  overflow: visible;
 }
 
 .hero-text {
@@ -83,20 +80,16 @@ body {
   animation-fill-mode: forwards;
   position: relative;
   z-index: 12;
-
-  /* Начальное состояние, которое будет переопределено анимацией */
   opacity: 0;
   transform: translateX(-1500px);
   visibility: hidden;
-
-  /* Подсказка браузеру для оптимизации анимации */
-  will-change: transform, opacity; /* <-- НОВОЕ СВОЙСТВО */
+  will-change: transform, opacity;
 }
 
 .hero-title .word.hidden-initial {
-  visibility: hidden; /* Скрыто до начала анимации */
+  visibility: hidden;
   opacity: 0;
-  transform: translateX(-1500px); /* Спрятано слева */
+  transform: translateX(-1500px);
 }
 
 .hero-title .word-personalized {
@@ -104,57 +97,42 @@ body {
   color: #415167;
   padding: 0 15px;
   line-height: 1.2;
-  /* Для плавного изменения background-color - только здесь */
-  transition: background-color 0.4s ease-out; /* <-- Увеличил время */
+  transition: background-color 0.4s ease-out;
 }
 
-/* !!! КЛЮЧЕВОЕ ИЗМЕНЕНИЕ: БОЛЕЕ ПОДРОБНЫЕ KEYFRAMES И ПРОСТОЙ TIMING-FUNCTION !!! */
 @keyframes slideInAndBack {
   0% {
     visibility: hidden;
     opacity: 0;
-    transform: translateX(-1500px); /* Начинаем далеко слева */
+    transform: translateX(-1500px);
   }
   0.1% {
-    /* Показываем очень быстро после старта */
     visibility: visible;
   }
-  /* Фаза "быстрого влетания" - делаем ее более длинной */
   25% {
-    /* <-- УВЕЛИЧИЛИ ЭТОТ ПРОЦЕНТ (было 15%) */
     opacity: 1;
-    transform: translateX(250px); /* <-- Значение "перелета" */
-    /* timing-function: ease-out; Может понадобиться для этого участка */
+    transform: translateX(250px);
   }
-  /* Фаза "возврата" - более плавная, не резкая */
   75% {
-    /* <-- УМЕНЬШИЛИ ЭТОТ ПРОЦЕНТ (было 75%, но для 25% это может быть 75%) */
     opacity: 1;
     transform: translateX(0px);
-    /* timing-function: ease-in; Может понадобиться для этого участка */
   }
   100% {
     visibility: visible;
     opacity: 1;
-    transform: translateX(0px); /* Конечная позиция */
+    transform: translateX(0px);
   }
 }
 
 .hero-title .word.animate {
-  /* Вернемся к более стандартному ease-out или настроим bezier без экстремальных значений */
-  animation: slideInAndBack 3.5s ease-out forwards; /* <-- ИЗМЕНИЛ TIMING-FUNCTION НА ease-out, ДЛИТЕЛЬНОСТЬ 3.5s */
-  /* Или попробуйте cubic-bezier(0.25, 0.46, 0.45, 0.94) - это smooth ease-out */
-  /* animation: slideInAndBack 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; */
+  animation: slideInAndBack 3.5s ease-out forwards;
 }
 
-/* Новый класс для появления бэкграунда */
 .hero-title .word-personalized.show-background {
   background-color: #c7a17a;
   color: #fff;
-  /* transition уже определен в .word-personalized */
 }
 
-/* Остальной CSS без изменений */
 .hero-image {
   position: absolute;
   right: 0;
@@ -217,8 +195,6 @@ body {
   color: #c98e6c;
 }
 
-/* Your-Coffee Section */
-
 .your-coffee-section {
   background-color: #fff;
   color: #415167;
@@ -237,7 +213,6 @@ body {
 }
 
 .your-coffee-text-content {
-  /* margin-top: 80px; */
   margin-bottom: 90px;
   max-width: 450px;
   margin-left: auto;
@@ -320,12 +295,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Your-Coffee Section */
-
-/* === ФИНАЛЬНЫЕ СТИЛИ ДЛЯ СЕКЦИИ Your-Favorite (v4) === */
-
 .your-favorite {
-  /* Для секции .your-favorite */
   background: linear-gradient(to right, #415167 25%, #f9fbff 25%);
   padding: 50px 0;
   text-align: center;
@@ -333,8 +303,7 @@ body {
 }
 
 .your-favorite-container {
-  max-width: 1100px; /* Сделаем чуть шире для крупных карточек */
-  /* ИЗМЕНЕНО: Возвращаем центрирование */
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
@@ -372,13 +341,12 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, auto);
-  grid-auto-columns: calc(50% - 15px); /* 2 колонки с отступом в 30px */
-  gap: 30px; /* Увеличим отступ между карточками */
+  grid-auto-columns: calc(50% - 15px);
+  gap: 30px;
   transition: transform 0.7s ease-in-out;
   will-change: transform;
 }
 
-/* Стили для одной карточки товара */
 .favorite-icon-item {
   background-color: #fff;
   border-radius: 8px;
@@ -390,17 +358,14 @@ body {
   padding-bottom: 0;
   display: flex;
   gap: 25px;
-  align-items: center; /* Выравниваем по центру по вертикали для баланса */
+  align-items: center;
   text-align: left;
-  height: 230px; /* Увеличим высоту */
+  height: 230px;
   overflow: hidden;
 }
 
-/* ИЗМЕНЕНО: Снова увеличиваем изображение */
 .product-image-wrapper {
   flex-shrink: 0;
-  /* width: 200px; */
-  /* height: 200px; */
   height: 100%;
   width: 44%;
   display: flex;
@@ -418,42 +383,37 @@ body {
 .product-info {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Центрируем контент по вертикали */
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
 
-/* ИЗМЕНЕНО: Центрируем текст внутри этого блока */
 .product-details-main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
-  text-align: left; /* Выравниваем по центру весь текст */
+  text-align: left;
 }
-
-/* Убираем лишние стили для удаленной обертки */
-/* .product-title-price-row { ... } */
 
 .favorite-icons-title {
   font-family: "Nunito", sans-serif;
-  font-size: 24px; /* Чуть крупнее заголовок */
+  font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #232c38;
   margin: 0;
 }
 
-/* ИЗМЕНЕНО: Цена теперь тоже центрируется */
 .product-price {
-  display: block; /* Убедимся, что цена на своей строке */
+  display: block;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
   color: #c7a17a;
-  margin-bottom: 10px; /* Увеличим отступ под ценой */
+  margin-bottom: 10px;
 }
 
 .favorite-icons-description {
@@ -462,17 +422,16 @@ body {
   font-weight: 300;
   line-height: 100%;
   color: #151d28;
-  margin-top: 10px; /* Небольшой отступ от заголовка */
-  margin-bottom: 15px; /* Отступ до кнопок */
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-/* ИЗМЕНЕНО: Центрируем кнопки */
 .product-actions {
   display: flex;
   gap: 20px;
   align-items: center;
   padding: 15px;
-  justify-content: flex-start; /* <-- ВОТ ИЗМЕНЕНИЕ */
+  justify-content: flex-start;
 }
 
 .buy-button {
@@ -509,11 +468,10 @@ body {
   background-color: transparent;
 }
 
-/* ИЗМЕНЕНО: Сдвигаем стрелку левее */
 .carousel-arrow {
   position: absolute;
   top: 50%;
-  right: 20px; /* <-- ВОТ ИЗМЕНЕНИЕ */
+  right: 20px;
   transform: translateY(-50%);
   z-index: 99;
 
@@ -548,10 +506,6 @@ body {
   pointer-events: none;
   z-index: 10;
 }
-
-/* Best-Gift Section */
-
-/* === ФИНАЛЬНЫЕ СТИЛИ ДЛЯ СЕКЦИИ BEST GIFT (v9 - Финал) === */
 
 .best-gift-section {
   background: linear-gradient(to right, #edf0f5 75%, #f9fbff 25%);
@@ -588,14 +542,11 @@ body {
   margin-bottom: 5px;
 }
 
-/* ИЗМЕНЕНИЕ: Контейнер-обертка становится точкой отсчета для идеального центрирования */
 .giftset-interactive-block {
   position: relative;
-  /* Задаем высоту, чтобы абсолютно спозиционированный дочерний элемент не ломал поток */
   min-height: 480px;
 }
 
-/* ИЗМЕНЕНИЕ: Применяем надежное абсолютное центрирование ко всему блоку */
 .giftset-card-with-pagination {
   display: flex;
   position: absolute;
@@ -606,7 +557,7 @@ body {
 
 .giftset-image {
   position: absolute;
-  left: -200px; /* Оптимальное положение для эффекта "выглядывания" */
+  left: -200px;
   top: 50%;
   transform: translateY(-50%);
   width: 380px;
@@ -625,10 +576,10 @@ body {
   background-color: #fff;
   box-shadow: 0 10px 40px rgba(65, 81, 103, 0.15);
   width: 760px;
-  padding-left: 280px; /* Место для картинки */
+  padding-left: 280px;
   padding-right: 40px;
   border-radius: 8px 0 0 8px;
-  min-height: 100%; /* Заставляем карточку быть не ниже родителя */
+  min-height: 100%;
   display: none;
   align-items: center;
 }
@@ -648,9 +599,8 @@ body {
   flex-direction: column;
 }
 
-/* ИЗМЕНЕНИЕ: Заставляем кнопки делить высоту поровну */
 .best-gift-pagination li {
-  flex: 1; /* Каждая кнопка займет 1/3 доступной высоты. Решает проблему высоты. */
+  flex: 1;
   width: 88px;
   background-color: #f0f3f8;
   border-left: 1px solid #e0e5ee;
@@ -681,7 +631,6 @@ body {
   border-left: none;
 }
 
-/* Стили контента внутри карточки (без изменений) */
 .giftset-card-content {
   padding: 0;
 }
@@ -758,17 +707,11 @@ body {
   margin-left: 125px;
 }
 
-/*
-===================================================
-  СТИЛИ ДЛЯ НОВОГО БЛОКА "COMBO PHIN PHÊ"
-===================================================
-*/
-
 .combo-section {
   padding: 80px 0;
   background: linear-gradient(to right, #f9fbff 75%, #415167 25%);
   position: relative;
-  overflow: hidden; /* Скрываем все, что выходит за пределы */
+  overflow: hidden;
 }
 
 .combo-container {
@@ -778,7 +721,6 @@ body {
   position: relative;
 }
 
-/* Стили для заголовка секции (аналогично другим секциям) */
 .combo-text-content {
   text-align: center;
   margin-bottom: 50px;
@@ -802,30 +744,26 @@ body {
   text-transform: uppercase;
 }
 
-/* Обертка для карусели, которая скрывает лишние карточки */
 .combo-carousel-wrapper {
   position: relative;
-  max-width: 1050px; /* (ширина 3-х карточек + отступы) */
+  max-width: 1050px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* Основной контейнер слайдера, который будет двигаться */
 .combo-carousel {
-  display: flex; /* Выстраиваем карточки в ряд */
-  gap: 30px; /* Отступ между карточками */
-  transition: transform 0.5s ease-in-out; /* Плавность прокрутки */
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out;
 }
 
-/* Стили для одной карточки товара */
 .combo-card {
-  flex: 0 0 calc(100% / 2.8 - 22px); /* Показываем 3 карточки в видимой области */
+  flex: 0 0 calc(100% / 2.8 - 22px);
   min-width: calc(100% / 2.8 - 22px);
   background-color: #fff;
   border: 1px solid #f0f3f8;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(65, 81, 103, 0.08);
-  /* text-align: center; */
   padding-bottom: 25px;
   overflow: hidden;
 }
@@ -886,26 +824,19 @@ body {
   color: #151d28;
   line-height: 100%;
   margin-bottom: 25px;
-  height: 45px; /* Фиксированная высота для выравнивания кнопок */
+  height: 45px;
 }
 
 .combo-card-actions {
   display: flex;
-  /* justify-content: center; */
   justify-content: space-between;
-  /* gap: 20px; */
   align-items: center;
 }
 
-/* Позиционирование стрелки */
 #comboCarouselNext {
   top: 58%;
-  right: 30px; /* Сдвигаем немного правее */
+  right: 30px;
 }
-
-
-
-/* Footer */
 
 .footer-section {
   padding-top: 20px;
@@ -926,5 +857,3 @@ body {
   font-weight: 300;
   color: #415167;
 }
-
-/* Footer */

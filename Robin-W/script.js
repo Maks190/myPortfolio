@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- Очистка полей формы и сброс высоты textarea при загрузке страницы ---
   const userNameInput = document.getElementById("userName");
   const userEmailInput = document.getElementById("userEmail");
   const messageTextArea = document.getElementById("userMessage");
 
-  // Очищаем текстовые поля
   if (userNameInput) {
     userNameInput.value = "";
   }
@@ -12,32 +10,24 @@ document.addEventListener("DOMContentLoaded", function () {
     userEmailInput.value = "";
   }
 
-  // Логика для textarea (очистка и авто-размер)
   if (messageTextArea) {
-    messageTextArea.value = ""; // Очищаем содержимое textarea
+    messageTextArea.value = "";
 
     function autoResizeTextArea() {
-      messageTextArea.style.height = "auto"; // Сброс высоты для корректного пересчета
+      messageTextArea.style.height = "auto";
       let newHeight = messageTextArea.scrollHeight;
-      messageTextArea.style.height = newHeight + "px"; // Установка новой высоты
+      messageTextArea.style.height = newHeight + "px";
     }
 
     messageTextArea.addEventListener("input", autoResizeTextArea);
 
-    // Вызываем autoResizeTextArea один раз при загрузке,
-    // чтобы установить правильную начальную высоту для пустого поля (согласно min-height)
     autoResizeTextArea();
   }
 
-  // --- Начало твоего существующего кода для галереи ---
-  // Находим все кнопки-фильтры
   const filterButtons = document.querySelectorAll(".photography-filter-btn");
-  // Находим все галереи
   const galleries = document.querySelectorAll(".photography-gallery");
 
-  // Функция для отображения выбранной галереи и активации кнопки
   function showGallery(filter) {
-    // Сначала скрываем все галереи и деактивируем все кнопки
     galleries.forEach((gallery) => {
       gallery.classList.remove("active");
     });
@@ -45,13 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
       button.classList.remove("active");
     });
 
-    // Находим нужную галерею по ID и показываем ее
     const galleryToShow = document.getElementById(`gallery-${filter}`);
     if (galleryToShow) {
       galleryToShow.classList.add("active");
     }
 
-    // Находим нужную кнопку по data-filter и активируем ее
     const activeButton = document.querySelector(
       `.photography-filter-btn[data-filter="${filter}"]`
     );
@@ -60,17 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Устанавливаем галерею "Italy" активной по умолчанию при загрузке страницы
-  showGallery("italy"); // Италия активна по умолчанию
+  showGallery("italy");
 
-  // Добавляем обработчик клика на каждую кнопку
   filterButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      const filterValue = this.dataset.filter; // Получаем значение data-filter кнопки
+      const filterValue = this.dataset.filter;
       showGallery(filterValue);
     });
   });
-  // --- Конец твоего существующего кода для галереи ---
   const headerNavLinks = document.querySelectorAll(
     ".header-right ul li a[data-target-section]"
   );
@@ -140,14 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(updateActiveNavLink, 100);
 
   const menuToggle = document.getElementById("mobile-menu");
-  const mainNav = document.querySelector(".header-right"); // Находим твою основную навигацию
+  const mainNav = document.querySelector(".header-right");
 
   if (menuToggle && mainNav) {
     menuToggle.addEventListener("click", function () {
-      mainNav.classList.toggle("is-active"); // Переключаем класс для показа/скрытия меню
-      menuToggle.classList.toggle("is-active"); // Переключаем класс для анимации бургера в крестик
+      mainNav.classList.toggle("is-active");
+      menuToggle.classList.toggle("is-active");
 
-      // Опционально: блокировка скролла страницы, когда меню открыто
       if (mainNav.classList.contains("is-active")) {
         document.body.style.overflow = "hidden";
       } else {
@@ -155,7 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Закрытие меню при клике на ссылку (для SPA-подобной навигации)
     const navLinks = mainNav.querySelectorAll("a");
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {

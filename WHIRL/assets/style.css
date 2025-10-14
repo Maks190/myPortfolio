@@ -12,15 +12,12 @@ body {
   line-height: 1.6;
 }
 
-/* Header Section */
-
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   border-bottom: 1px solid #e5e7eb;
-  /* border: 1px solid #f0f0f0; */
 }
 
 .header-left {
@@ -28,15 +25,11 @@ body {
   align-items: center;
 }
 
-/* Logo */
-
 .logo-container {
   display: flex;
   align-items: center;
   margin-right: 45px;
 }
-
-/* Logo */
 
 .logo-container a {
   text-decoration: none;
@@ -55,8 +48,6 @@ body {
   color: #111827;
   font-weight: 700;
 }
-
-/* Main nav */
 
 .main-nav ul {
   display: flex;
@@ -84,10 +75,6 @@ body {
 .main-nav ul li a:hover {
   color: #0070a0;
 }
-
-/* Main nav */
-
-/* Action buttons */
 
 .action-buttons ul {
   display: flex;
@@ -127,10 +114,6 @@ body {
   background-color: #0056b3;
   color: white;
 }
-
-/* Action buttons */
-
-/* Main Section */
 
 .main-section {
   padding: 60px 0;
@@ -517,36 +500,34 @@ body {
 .privilege-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 30px 0; /* Отступ снизу до кнопки Book a Demo */
+  margin: 0 0 30px 0;
 }
 
 .privilege-list li {
   display: flex;
   align-items: center;
-  margin-bottom: 12px; /* Отступ между пунктами списка */
+  margin-bottom: 12px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: 500; /* Текст пунктов списка может быть чуть жирнее обычного */
+  font-weight: 500;
 }
 
 .privilege-list .check-mark-icon {
-  width: 20px; /* Размер галочки */
+  width: 20px;
   height: 20px;
   margin-right: 12px;
-  flex-shrink: 0; /* Чтобы иконка не сжималась */
-  /* Убедись, что SVG галочки использует fill="currentColor" или stroke="currentColor" */
-  /* color: #34d399; /* Пример зеленого цвета для галочки, если нужен */
+  flex-shrink: 0;
 }
 
 .demo-button-link {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #fff; /* Белый цвет */
-  text-decoration: none; /* Убираем подчеркивание */
-  display: inline-flex; /* Для выравнивания текста и возможной стрелочки */
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
   align-items: center;
-  padding: 8px 0; /* Небольшие вертикальные отступы, если нужно увеличить кликабельную область */
+  padding: 8px 0;
   transition: opacity 0.3s ease;
 }
 
@@ -792,10 +773,6 @@ body {
   margin-right: 8px;
 }
 
-/* Main Section */
-
-/* Footer Section */
-
 .site-footer-main {
   background-color: #fff;
   padding: 70px 0 30px 0;
@@ -951,5 +928,3 @@ body {
 .footer-social-icons a:hover img {
   opacity: 1;
 }
-
-/* Footer Section */
