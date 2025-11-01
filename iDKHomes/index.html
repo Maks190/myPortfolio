@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>IDKH</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="hContainer">
+        <div class="hLeft">
+          <img src="./assets/logo.png" alt="IDKH_logo" />
+          <h2 class="hTitle">IDK Homes</h2>
+        </div>
+        <div class="hRight">
+          <a href="tel:+19715001234" class="hPhone">+1 971 500 1234</a>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="navBar">
+      <div class="nBContainer">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Forms</a>
+        <a href="#">Our Works</a>
+        <a href="#">Contact us</a>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hrContainer">
+        <div class="hrInfo">
+          <h1>Professional Commercial & Home Appliance Repair</h1>
+          <p>Trusted Service That Keeps Your Appliances Running Longer</p>
+          <button>Book a Technician</button>
+        </div>
+        <div class="hrImg">
+          <img src="./assets/furniture.png" alt="furniture" class="furniture" />
+          <img src="./assets/man.png" alt="man" class="hrMan" />
+          <div class="hrCircle"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="whyUs">
+      <div class="wUContainer">
+        <div class="wUInfo">
+          <h2>Why choose us?</h2>
+          <p>
+            We specialize in repairing both household and commercial appliances.
+            Our certified technicians arrive on time, diagnose the issue
+            quickly, and restore your equipment to perfect working condition
+          </p>
+          <ul>
+            <li>Same-day service available</li>
+            <li>Original spare parts</li>
+            <li>Up to 12 months warranty on repairs</li>
+          </ul>
+          <button class="wUBtn">Schedule a Repair</button>
+        </div>
+        <div class="wUImg">
+          <img src="./assets/workers.png" alt="workers" class="wUworkers" />
+        </div>
+      </div>
+    </section>
+
+    <section class="ourServices">
+      <div class="oSContainer">
+        <h2>Our Services</h2>
+        <div class="oSCards">
+          <div class="service-card">
+            <img
+              src="assets/repairman-doing-air-conditioner-service 1.png"
+              alt="HVAC Repair"
+            />
+            <h3>HVAC REPAIR</h3>
+            <p>
+              Professional maintenance and repair for air conditioning and
+              ventilation systems.
+            </p>
+          </div>
+
+          <div class="service-card active">
+            <img
+              src="assets/service-maintenance-worker-repairing 1.png"
+              alt="Appliance Repair"
+            />
+            <h3>APPLIANCE REPAIR</h3>
+            <p>First, reliable service for all your home appliances.</p>
+          </div>
+
+          <div class="service-card">
+            <img src="assets/R 1.png" alt="Appliance Installation" />
+            <h3>APPLIANCE INSTALLATION</h3>
+            <p>Safe and professional installation with warranty</p>
+          </div>
+        </div>
+        <button class="oSBtn">Get a Free Quote</button>
+      </div>
+    </section>
+
+    <section class="whatsBroken">
+      <div class="wBContainer">
+        <h2>What’s broken?</h2>
+        <p>Select your appliance so we can help you faster</p>
+        <div class="wBAppliances">
+          <div class="appliances-container">
+            <div class="appliances-track"></div>
+          </div>
+
+          <div class="nav-arrows">
+            <button class="arrow left-arrow" id="prevBtn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.75 19.5L8.25 12L15.75 4.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="arrow right-arrow" id="nextBtn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 4.5L15.75 12L8.25 19.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactUs">
+      <div class="cUContainer">
+        <h2>Contact Us</h2>
+        <div class="personalDataInputs">
+          <div class="name">
+            <h3>Name</h3>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="phoneNumber">
+            <h3>Phone Number</h3>
+            <input type="text" placeholder="Phone Number" />
+          </div>
+        </div>
+        <div class="emailInput">
+          <h3>Email</h3>
+          <input type="email" placeholder="Email" />
+        </div>
+        <button class="contactBtn">Contact</button>
+      </div>
+    </section>
+
+    <section class="seeUs">
+      <div class="sUContainer">
+        <h2>See Us in Action</h2>
+        <p>
+          Every day, we help families and businesses bring their appliances back
+          to life. Our team works fast, keeps things tidy, and ensures
+          long-lasting results
+        </p>
+        <div class="action-carousel-wrapper">
+          <div class="action-carousel-viewport">
+            <div class="action-carousel-track">
+              <div class="action-slide">
+                <img
+                  src="./assets/WMRepairing.png"
+                  alt="Washing Machine Repairing"
+                />
+              </div>
+              <div class="action-slide">
+                <img
+                  src="./assets/EORepairing.png"
+                  alt="Electrical Oven Repairing"
+                />
+              </div>
+              <div class="action-slide">
+                <img src="./assets/PRepairing.png" alt="Pipe Repairing" />
+              </div>
+              <div class="action-slide">
+                <img src="./assets/R 1.png" alt="Plumbing Repairing" />
+              </div>
+              <div class="action-slide">
+                <img src="./assets/PRepairing1.png" alt="Appliance Repair" />
+              </div>
+            </div>
+          </div>
+          <div class="action-nav">
+            <button id="actionPrev" class="arrow">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.75 19.5L8.25 12L15.75 4.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button id="actionNext" class="arrow">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 4.5L15.75 12L8.25 19.5"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="needRepair">
+      <div class="nRContainer">
+        <img
+          src="./assets/21253197_2106.q703.016.S.m004.c10.household appliance realistic 1.png"
+          alt="furniture2"
+        />
+        <div class="inf">
+          <h2 class="infH">Need Urgent Repair?</h2>
+          <p class="infP">
+            Leave a request now and our technician will call you back within 15
+            minutes to confirm the details and schedule a visit at your
+            convenience.
+          </p>
+          <div class="actComps">
+            <div class="dfInpts">
+              <div class="name">
+                <h3>Name</h3>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div class="phoneNumber">
+                <h3>Phone Number</h3>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+            </div>
+            <div class="time">
+              <h3>Preferred Time</h3>
+              <input type="text" placeholder="Time" />
+            </div>
+            <div class="addressInpt">
+              <h3>Address</h3>
+              <input type="text" placeholder="Address" />
+            </div>
+          </div>
+          <button class="reqCall">Request a Call</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="bContainer">
+        <h2 class="bH">We Work With All Major Brands</h2>
+        <p class="bP">
+          No matter the brand, our experts have the tools and knowledge to fix
+          it. We service Samsung, LG, Bosch, Whirlpool, Electrolux, General
+          Electric and many more.
+        </p>
+        <div class="bLogos">
+          <div class="firstRow">
+            <img src="./assets/electrolux.png" alt="Electrolux" />
+            <img src="./assets/blomberg.png" alt="Blomberg" />
+            <img src="./assets/bosch.png" alt="Bosch" />
+            <img src="./assets/samsung.png" alt="Samsung" />
+          </div>
+          <div class="secondRow">
+            <img src="./assets/whirlpool.png" alt="Whirlpool" />
+            <img src="./assets/lg.png" alt="LG" />
+            <img src="./assets/generalelectric.png" alt="General Electric" />
+            <img src="./assets/fisher&paykel.png" alt="Fisher & Paykel" />
+          </div>
+        </div>
+        <button>
+          See All Brands
+          <span class="button-arrow">⬇</span>
+        </button>
+        <p class="bSub">
+          No matter which brand your appliance is, our IDK HOMES technicians
+          have the expertise to diagnose and repair the issue efficiently. If
+          your appliance is from any of these trusted brands, you can count on
+          us for a reliable and long-lasting repair solution. Let us help you
+          get your appliances back in top condition.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cContainer">
+        <div class="cLeft">
+          <h2>Contact Us</h2>
+          <p>Feel Free To Contact Us!</p>
+        </div>
+        <div class="cRight">
+          <div class="cDFInp">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <input type="email" placeholder="Email" />
+          <button>waiting for a call</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="allO">
+      <div class="aOContainer">
+        <h2>Serving All of Oregon</h2>
+        <p>
+          Whether you’re in the city or surrounding suburbs, our technicians are
+          ready to come to you the same day.
+        </p>
+        <img src="./assets/map.png" alt="Map" />
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="rContainer">
+        <h2>What Our Clients Say</h2>
+        <p>
+          We’ve helped hundreds of happy customers — here’s what they say about
+          our work:
+        </p>
+
+        <div class="cards-wrapper">
+          <div class="review-card side-card">
+            <img
+              src="./assets/googleLogo.png"
+              alt="Google Logo"
+              class="google-logo"
+            />
+            <div class="user-info">
+              <div class="left-col">
+                <img
+                  src="./assets/emilyJohnson.png"
+                  alt="Photo of Emily Johnson"
+                  class="user-photo"
+                />
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="user-details">
+                <h3>Emily Johnson</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              I had an issue with my washing machine, and the technician arrived
+              the same day. The service was quick, professional, and affordable.
+              My appliance works perfectly now - highly recommended.
+            </p>
+          </div>
+
+          <div class="review-card center-card">
+            <img
+              src="./assets/googleLogo.png"
+              alt="Google Logo"
+              class="google-logo"
+            />
+            <div class="user-info">
+              <div class="left-col">
+                <img
+                  src="./assets/markPeterson.png"
+                  alt="Photo of Mark Peterson"
+                  class="user-photo"
+                />
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="user-details">
+                <h3>Mark Peterson</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              Our restaurant’s refrigerator broke down, and RestorePro saved the
+              day. They understood the urgency, repaired it quickly, and helped
+              us avoid major losses. Excellent service for business equipment!
+            </p>
+          </div>
+
+          <div class="review-card side-card">
+            <img
+              src="./assets/googleLogo.png"
+              alt="Google Logo"
+              class="google-logo"
+            />
+            <div class="user-info">
+              <div class="left-col">
+                <img
+                  src="./assets/markSmith.png"
+                  alt="Photo of Mark Smith"
+                  class="user-photo"
+                />
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="user-details">
+                <h3>Mark Smith</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              We contacted the company to fix multiple office air conditioning
+              units. The team was punctual, well-organised, and efficient.
+              Everything was repaired on time, and the workplace is comfortable
+              again.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="fContainer">
+        <h2>IDK Homes – your trusted appliance repair partner</h2>
+        <div class="fNav">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Forms</a>
+          <a href="#">Our Works</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="fSocial">
+          <a href="#"
+            ><img src="./assets/facebookLogo.png" alt="Facebook Logo"
+          /></a>
+          <a href="#"
+            ><img src="./assets/twitterLogo.png" alt="Twitter Logo"
+          /></a>
+          <a href="#"
+            ><img src="./assets/youtubeLogo.png" alt="YouTube Logo"
+          /></a>
+        </div>
+        <div class="fBottom">
+          <div class="fBLeft">
+            <img src="./assets/logo.png" alt="IDKH_logo" />
+            <h3>IDK HOMES</h3>
+          </div>
+          <div class="fBRight">
+            <div class="callUs">
+              <img src="./assets/phoneIcon.png" alt="Phone" />
+              <h3>Call Us:<a href="tel:+1437999999">+1 437 999 999</a></h3>
+            </div>
+            <div class="openTime">
+              <img src="./assets/timerIcon.png" alt="Timer" />
+              <h3>Open Daily: 8:00 AM – 10:00 PM</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const appliancesData = [
+          { name: "Electric Kettle", img: "./assets/electric kettle.png" },
+          { name: "Microwave", img: "./assets/microwave.png" },
+          { name: "Refrigerator", img: "./assets/refrigerator.png" },
+          { name: "Oven", img: "./assets/oven.png" },
+          { name: "Multicooker", img: "./assets/multicooker.png" },
+        ];
+
+        const track = document.querySelector(".appliances-track");
+
+        appliancesData.forEach((appliance) => {
+          const item = document.createElement("div");
+          item.className = "appliance-item";
+          item.innerHTML = `
+            <img src="${appliance.img}" alt="${appliance.name}" class="appliance-image">
+            <span class="appliance-name">${appliance.name}</span>
+        `;
+          track.appendChild(item);
+        });
+
+        const items = Array.from(track.children);
+        const itemStyle = getComputedStyle(items[0]);
+        const itemWidth =
+          items[0].offsetWidth +
+          parseInt(itemStyle.marginLeft) +
+          parseInt(itemStyle.marginRight);
+
+        const visibleItems = 3;
+
+        const itemsToCloneStart = items.slice(-visibleItems);
+        itemsToCloneStart.reverse().forEach((item) => {
+          track.insertAdjacentElement("afterbegin", item.cloneNode(true));
+        });
+
+        const itemsToCloneEnd = items.slice(0, visibleItems);
+        itemsToCloneEnd.forEach((item) => {
+          track.appendChild(item.cloneNode(true));
+        });
+
+        const allItems = Array.from(track.children);
+        let currentIndex = visibleItems + 2;
+        let isMoving = false;
+
+        function updateCarousel(instant = false) {
+          if (instant) {
+            track.style.transition = "none";
+          } else {
+            track.style.transition = "transform 0.5s ease-in-out";
+          }
+
+          const offset =
+            -currentIndex * itemWidth +
+            track.parentElement.clientWidth / 2 -
+            itemWidth / 2;
+          track.style.transform = `translateX(${offset}px)`;
+
+          allItems.forEach((item, index) => {
+            item.classList.remove("active");
+            if (index === currentIndex) {
+              item.classList.add("active");
+            }
+          });
+        }
+
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        nextBtn.addEventListener("click", () => {
+          if (isMoving) return;
+          isMoving = true;
+          currentIndex++;
+          updateCarousel();
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (isMoving) return;
+          isMoving = true;
+          currentIndex--;
+          updateCarousel();
+        });
+
+        track.addEventListener("transitionend", () => {
+          isMoving = false;
+
+          if (currentIndex >= items.length + visibleItems) {
+            currentIndex =
+              visibleItems + (currentIndex - (items.length + visibleItems));
+            updateCarousel(true);
+          }
+
+          if (currentIndex < visibleItems) {
+            currentIndex = items.length + currentIndex;
+            updateCarousel(true);
+          }
+        });
+
+        updateCarousel(true);
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const trackAction = document.querySelector(".action-carousel-track");
+        if (trackAction) {
+          const slidesAction = Array.from(trackAction.children);
+          const nextButtonAction = document.getElementById("actionNext");
+          const prevButtonAction = document.getElementById("actionPrev");
+          const slideWidth = slidesAction[0].getBoundingClientRect().width;
+          const gap = 30;
+          const peekAmount = 110;
+          const clonesToShow = 2;
+          for (let i = 0; i < clonesToShow; i++) {
+            trackAction.appendChild(slidesAction[i].cloneNode(true));
+          }
+          for (
+            let i = slidesAction.length - 1;
+            i >= slidesAction.length - clonesToShow;
+            i--
+          ) {
+            trackAction.prepend(slidesAction[i].cloneNode(true));
+          }
+          let currentIndex = clonesToShow;
+          let isMoving = false;
+          const allSlides = Array.from(trackAction.children);
+          const updateCarousel = (instant = false) => {
+            if (instant) {
+              trackAction.style.transition = "none";
+            } else {
+              trackAction.style.transition = "transform 0.5s ease-in-out";
+            }
+            const offset = -currentIndex * (slideWidth + gap) + peekAmount;
+            trackAction.style.transform = `translateX(${offset}px)`;
+            allSlides.forEach((slide, index) => {
+              slide.classList.remove("active");
+              if (index === currentIndex) {
+                slide.classList.add("active");
+              }
+            });
+          };
+          nextButtonAction.addEventListener("click", () => {
+            if (isMoving) return;
+            isMoving = true;
+            currentIndex++;
+            updateCarousel();
+          });
+          prevButtonAction.addEventListener("click", () => {
+            if (isMoving) return;
+            isMoving = true;
+            currentIndex--;
+            updateCarousel();
+          });
+          trackAction.addEventListener("transitionend", () => {
+            isMoving = false;
+            if (currentIndex >= slidesAction.length + clonesToShow) {
+              currentIndex = clonesToShow;
+              updateCarousel(true);
+            }
+            if (currentIndex < clonesToShow) {
+              currentIndex = slidesAction.length + clonesToShow - 1;
+              updateCarousel(true);
+            }
+          });
+          updateCarousel(true);
+        }
+      });
+    </script>
+  </body>
+</html>
