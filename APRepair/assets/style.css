@@ -204,6 +204,7 @@
 .ourQualities {
   padding: 40px 100px;
   max-height: 140px;
+  background: #ffffff;
 }
 
 .oQContainer {
@@ -243,8 +244,9 @@
   padding-left: 50px;
 }
 
-.appServices {
+.apServices {
   padding: 100px 100px;
+  background: #ffffff;
 }
 
 .aSContainer {
@@ -378,6 +380,7 @@
 .reviews,
 .ourBlog {
   padding: 80px 80px;
+  background: #ffffff;
 }
 
 .rHeader,
@@ -514,7 +517,8 @@
 }
 
 .faq {
-  padding: 80px 0px;
+  padding: 80px 0;
+  background: #ffffff;
 }
 
 .fContainer {
@@ -772,6 +776,7 @@
 
 .cta {
   padding: 80px 80px;
+  background: #ffffff;
 }
 
 .cContainer {
