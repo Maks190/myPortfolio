@@ -2,6 +2,12 @@
 
 ---
 
+## Appliance Repair
+
+![ARScreenshot](./images/aprepair.png)
+
+---
+
 ## Revo
 
 ![RevoScreenshot](./images/revo.png)
