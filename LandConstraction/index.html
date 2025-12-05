@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Landing Constraction</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="hContainer">
+        <img src="./assets/img/lclogo.png" alt="Logo" />
+        <div class="navBtns">
+          <a href="#">Услуги</a>
+          <a href="#">Портфолио</a>
+          <a href="#">Отзывы</a>
+          <a href="#">Контакты</a>
+        </div>
+        <button>Консультация</button>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hrContainer">
+        <div class="hrInf">
+          <p>Гипсокартонные работы</p>
+          <h1 class="customTitle">
+            <span>Ровные стены, потолки и</span>
+            <span>перегородки</span>
+            <span>под ключ и в срок</span>
+          </h1>
+          <p class="subtitle">
+            <span>Перегородки, ниши, арки, изоляция.</span>
+            <span>Работаем аккуратно, с договором и гарантией.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="sContainer">
+        <div class="sectionContentWrapper">
+          <p>Услуги</p>
+          <h2>Наши услуги по гипсокартону</h2>
+          <p class="sSubtitle">
+            Чистая геометрия, аккуратные швы и соблюдение технологии на каждом
+            этапе.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="trackServices">
+            <div class="card">
+              <h3>Ниши/короба</h3>
+              <p>ТВ-ниши, короба под шторы и инженерку, радиусы.</p>
+              <a href="#">Заказать &rarr;</a>
+            </div>
+            <div class="card">
+              <h3>Перегородки ГКЛ</h3>
+              <p>Каркас, шумка, закладные под двери. Двойная обшивка.</p>
+              <a href="#">Заказать &rarr;</a>
+            </div>
+            <div class="card">
+              <h3>Потолки 1-2 уровня</h3>
+              <p>Идеальная плоскость, ниши под свет, ревизии.</p>
+              <a href="#">Заказать &rarr;</a>
+            </div>
+            <div class="card">
+              <h3>Шумо/термо</h3>
+              <p>Минвата, демпферные ленты, виброподвесы.</p>
+              <a href="#">Заказать &rarr;</a>
+            </div>
+            <div class="card">
+              <h3>Швы и финиш</h3>
+              <p>Ленты, герметики, финиш под краску «без зебры».</p>
+              <a href="#">Заказать &rarr;</a>
+            </div>
+            <div class="card">
+              <h3>Комплектация</h3>
+              <p>Подбор и доставка профиля, ГКЛ и крепежа.</p>
+              <a href="#">Заказать &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button id="btnLeftServices" class="arrow-btn disabled">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBarServices"></div>
+          </div>
+
+          <button id="btnRightServices" class="arrow-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="pContainer">
+        <div class="sectionContentWrapper">
+          <p>Портфолио</p>
+          <h2>Свежие работы</h2>
+          <p class="pSubtitle">
+            Несколько недавних объектов. Больше примеров — по запросу.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="trackPortfolio">
+            <img src="./assets/img/workMan1.png" alt="workMan1" />
+            <img src="./assets/img/workMan2.png" alt="workMan2" />
+            <img src="./assets/img/workMan3.png" alt="workMan3" />
+            <img src="./assets/img/workMan1.png" alt="workMan1" />
+            <img src="./assets/img/workMan2.png" alt="workMan2" />
+            <img src="./assets/img/workMan3.png" alt="workMan3" />
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button id="btnLeftPortfolio" class="arrow-btn disabled">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBarPortfolio"></div>
+          </div>
+
+          <button id="btnRightPortfolio" class="arrow-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="whyUs">
+      <div class="wUContainer">
+        <p>Почему мы?</p>
+        <h2>Надёжно, аккуратно, в срок</h2>
+        <p class="sSubtitle">
+          Соблюдаем технологию и договорённости. Покажем портфолио и смету до
+          старта.
+        </p>
+
+        <div class="wUCards">
+          <div class="wUCard">
+            <h2>10 +</h2>
+            <p>лет на рынке</p>
+          </div>
+
+          <div class="wUCard">
+            <h2>200 +</h2>
+            <p>завершённых объектов</p>
+          </div>
+
+          <div class="wUCard">
+            <h2>5</h2>
+            <p>лет гарантии</p>
+          </div>
+
+          <div class="wUCard">
+            <h2>24 ч</h2>
+            <p>смета в течении суток</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cContainer">
+        <div class="cLeft">
+          <h2>Нужна укладка напольных покрытий?</h2>
+          <p>
+            Мы сделаем укладку быстро и аккуратно. Гарантия качества в каждом
+            метре.
+          </p>
+        </div>
+        <div class="cRight">
+          <img src="./assets/img/workMan4.png" alt="workMan4" />
+          <button class="ctaBtn">
+            Заказать
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="rContainer">
+        <div class="sectionContentWrapper">
+          <p>Отзывы</p>
+          <h2>Что говорят клиенты</h2>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="trackReviews">
+            <div class="card">
+              <h3>Сделали перегородки и потолки в срок, чисто и аккуратно.</h3>
+              <p>Анна, Киев</p>
+            </div>
+            <div class="card">
+              <h3>Понравилась прозрачная смета и качество углов.</h3>
+              <p>Игорь, Львов</p>
+            </div>
+            <div class="card">
+              <h3>Рекомендую. Хорошая коммуникация и результат.</h3>
+              <p>Марина, Одесса</p>
+            </div>
+            <div class="card">
+              <h3>Рекомендую. Хорошая коммуникация и результат.</h3>
+              <p>Марина, Одесса</p>
+            </div>
+            <div class="card">
+              <h3>Сделали перегородки и потолки в срок, чисто и аккуратно.</h3>
+              <p>Анна, Киев</p>
+            </div>
+            <div class="card">
+              <h3>Понравилась прозрачная смета и качество углов.</h3>
+              <p>Игорь, Львов</p>
+            </div>
+            <div class="card">
+              <h3>Рекомендую. Хорошая коммуникация и результат.</h3>
+              <p>Марина, Одесса</p>
+            </div>
+            <div class="card">
+              <h3>Рекомендую. Хорошая коммуникация и результат.</h3>
+              <p>Марина, Одесса</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button id="btnLeftReviews" class="arrow-btn disabled">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBarReviews"></div>
+          </div>
+
+          <button id="btnRightReviews" class="arrow-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="answer">
+      <div class="aContainer">
+        <div class="aLeft">
+          <div class="answerCard">
+            <h2>Оставить заявку</h2>
+            <p>
+              Опишите задачу — свяжемся в течение рабочего дня и уточним детали.
+            </p>
+            <div class="flexInputs">
+              <input type="text" placeholder="Ваше имя" />
+              <input type="text" placeholder="Телефон" />
+            </div>
+            <textarea
+              class="exInput"
+              placeholder="Коротко о задаче : тип работы, площадь, сроки"
+            ></textarea>
+            <button>Получить консультацию</button>
+          </div>
+        </div>
+
+        <div class="aContacts">
+          <div class="contacts">
+            <h3>Контакты</h3>
+            <div class="comMetods">
+              <a href="tel:+38(000)0000000"
+                >Телефон: <span>+38 (000) 000-00-00</span></a
+              >
+              <a href="mailto:info@example.com"
+                >Email: <span>info@example.com</span></a
+              >
+            </div>
+          </div>
+          <div class="working">
+            <h3>Работаем</h3>
+            <div class="timeWork">
+              <p>Пн-Сб, 09:00-19:00</p>
+              <p>Киев и область</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="hContainer">
+        <img src="./assets/img/lclogo.png" alt="Logo" />
+        <div class="navBtns">
+          <a href="#">Услуги</a>
+          <a href="#">Портфолио</a>
+          <a href="#">Отзывы</a>
+        </div>
+        <button>Консультация</button>
+      </div>
+      <p>© 2025 СтройПро. Все права защищены.</p>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
